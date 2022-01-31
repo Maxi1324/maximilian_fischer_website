@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Maxi1324/maximilian_fischer_website/static/css/main.2c4cdb47.css",
+    "main.js": "/Maxi1324/maximilian_fischer_website/static/js/main.d04eeec7.js",
+    "index.html": "/Maxi1324/maximilian_fischer_website/index.html",
+    "main.2c4cdb47.css.map": "/Maxi1324/maximilian_fischer_website/static/css/main.2c4cdb47.css.map",
+    "main.d04eeec7.js.map": "/Maxi1324/maximilian_fischer_website/static/js/main.d04eeec7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2c4cdb47.css",
+    "static/js/main.d04eeec7.js"
+  ]
+}

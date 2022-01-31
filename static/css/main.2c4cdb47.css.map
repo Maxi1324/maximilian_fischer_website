@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.2c4cdb47.css","mappings":"AAAA,KACI,wBACJ,CAEA,YAEI,qBACJ","sources":["css/Style.css"],"sourcesContent":["body{\r\n    background-color: rgb(77, 77, 77);\r\n}\r\n\r\n.FullScreen{\r\n\r\n    background-color: black;\r\n}"],"names":[],"sourceRoot":""}
