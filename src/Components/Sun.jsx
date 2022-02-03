@@ -7,11 +7,10 @@ function Sun() {
     const texture = useLoader(TextureLoader, "SunTexture.png")
     const ref = useRef()
     useFrame((state, delta) => (ref.current.rotation.y += 0.003))
-
     return (
         <mesh scale={1} ref = {ref} >
-          <sphereGeometry />ss
-          <meshStandardMaterial emissive="#ffed4d"  emissiveIntensity={1.2} emissiveMap={texture} shininess={2}  />
+          <sphereGeometry />
+          <meshStandardMaterial emissive="orange"  emissiveIntensity={.5} emissiveMap={texture} shininess={0} map={texture}  />
         </mesh>
     );
 }
