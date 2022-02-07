@@ -1,8 +1,9 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useRef } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { useResource } from 'react-three-fiber'
 import { useThree } from "react-three-fiber";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Sun from '../Components/Sun'
 import { OrbitControls, Sky, Stage, Stars } from '@react-three/drei'
 import SkyBox from '../Components/Skybox'
@@ -13,14 +14,15 @@ import { Vector3 } from 'three';
 import { Scene } from 'three';
 import Textbox from '../Components/TextBox';
 import NavBar from '../Components/Navbar';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import TextBoxen from '../Components/TextBoxen';
 
 export default function IndexPage() {
   const [dimensions, setDimensions] = React.useState({
     height: window.innerHeight,
     width: window.innerWidth
   })
-  React.useEffect(() => {
+ 
+  useEffect(() => {
     function handleResize() {
       setDimensions({
         height: window.innerHeight,
@@ -29,17 +31,19 @@ export default function IndexPage() {
     }
     window.addEventListener('resize', handleResize)
   })
-  //  <OrbitControls enablePan={true} enableZoom={true} enableRotate={true} />
+
+  const CamPos = useRef(0)
+  const textboxen = useRef()
 
   return (
     <>
-      <NavBar></NavBar>
+      <NavBar CamPos={CamPos} TextBoxen = {textboxen}></NavBar>
+
       <Canvas style={{ height: dimensions.height, width: dimensions.width }}
-        camera={{ fov: 70, position: [0, 10000, 1000] }} className='FullScreen'>
+        camera={{ fov: 70 }} className='FullScreen'>
         <Stars radius={300} depth={10} count={5000} factor={10} saturation={2} fade />
         <Stage>
-          <Camera1></Camera1>
-          {/*<OrbitControls></OrbitControls>*/}
+          <Camera1 ScrollPos={CamPos} ></Camera1>
           <group dispose={null}>
             <Sun></Sun>
           </group>
@@ -57,7 +61,8 @@ export default function IndexPage() {
           </Bloom>
         </EffectComposer>
       </Canvas>
-      <Textbox></Textbox>
+
+      <TextBoxen ref={textboxen} />
     </>
   )
 }
