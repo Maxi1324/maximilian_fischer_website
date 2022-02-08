@@ -1,0 +1,76 @@
+{
+    "Skills": [
+        {
+            "name": "Applications",
+            "Skills": [
+                {
+                    "name": "Office",
+                    "Skills": [
+                        {
+                            "name": "Word",
+                            "Score": 4.5
+                        },
+                        {
+                            "name": "Powerpoint",
+                            "Score": 4
+                        },
+                        {
+                            "name": "Excel",
+                            "Score": 3.5
+                        },
+                        {
+                            "name": "Access",
+                            "Score": 3
+                        }
+                    ]
+                },
+                {
+                    "name": "Graphics",
+                    "Skills": [
+                        {
+                            "name": "Blender",
+                            "Score":4.5
+                        },
+                        {
+                            "name": "Krita",
+                            "Score":2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Programming Languages",
+            "Skills": [
+                {
+                    "name": "Python",
+                    "Score": 5
+                },
+                {
+                    "name": "C++",
+                    "Score": 2
+                },
+                {
+                    "name": "Lua",
+                    "Score": 3
+                },
+                {
+                    "name": "java",
+                    "Score": 5
+                },
+                {
+                    "name": "C#",
+                    "Score": 5
+                },
+                {
+                    "name": "PHP",
+                    "Score": 2
+                },
+                {
+                    "name": "JavaScript",
+                    "Score": 5
+                }
+            ]
+        }
+    ]
+}
