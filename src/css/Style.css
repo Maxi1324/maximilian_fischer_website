@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 body{
-    background-color: rgb(77, 77, 77);
+    background-image: linear-gradient(rgb(0, 76, 255), rgb(119, 0, 255), rgb(119, 0, 255),rgb(47, 0, 255));
     padding: 0px;
     margin: 0px;
     font-size: 2rem;
@@ -9,7 +9,6 @@ body{
 }
 
 .FullScreen{
-    background-color: black;
     padding: 0px;
     margin:0px;
 }
@@ -34,7 +33,7 @@ body{
 }
 
 .Navbar{
-    background: rgba(0, 0, 0, 0.308) ;
+    background: rgba(255, 255, 255, 0.561) ;
     position: absolute;
     width: 70%;
     height: 4rem;
@@ -50,7 +49,7 @@ body{
 .NavbarItems{
     margin: 1rem;
     border-radius: 20px;
-    color: rgb(255, 255, 255) !important;
+    color: rgb(0, 0, 0) !important;
 }
 
 .NavbarItems:hover{
